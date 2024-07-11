@@ -1,0 +1,242 @@
+/* ESTILOS COMUNES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* ESTILOS HEADER */
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/nbaheader2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(rgba(255, 42, 0, 0.523), rgba(255, 136, 0, 0.725));
+    color: azure;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* ESTILOS NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #e18547;
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 5px;
+    border-color: #457b9d;
+}
+
+.navbar a {
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #1d3557;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/* ESTILO PARTE PRINCIPAL */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 10px;
+    background-color: #f1faee;
+    text-align: center;
+}
+
+main {
+    flex-basis: 75%;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #a8dadc;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #1d3557;
+    text-align: center;
+}
+
+main p {
+    font-style: italic;
+}
+
+main img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .read-more {
+    background-color: #457b9d;
+    color: #f1faee;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+main .read-more:hover {
+    background-color: red;
+}
+
+.see-more {
+    display: block;
+    background-color: #457b9d;
+    color: #f1faee;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .see-more:hover {
+    background-color: red;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.04);
+}
+
+.ca {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px dotted;
+    background-image: linear-gradient(orange, red);
+}
+
+.asidetitle {
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    .image img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #f1faee;
+}
+
+/* ESTILOS FORMULARIO */
+form {
+    padding: 40px;
+    background-color: #a8dadc;
+    border: 5px outset #e18547;
+    text-align: center;
+}
+
+label {
+    background-color: #e18547;
+    color: #f1faee;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 10px double red;
+    margin-top: 10vh;
+}
+
+input {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+label, input {
+    width: 50%;
+    font-size: large;
+    border-radius: 10px;
+}
+
+input[type="reset"]:hover{
+    background-color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input[type="submit"]:hover{
+    background-color: green;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+

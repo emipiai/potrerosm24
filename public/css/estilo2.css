@@ -1,0 +1,85 @@
+/* ESTILOS COMUNES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: lightskyblue;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* ESTILOS NAVBAR BOOTSTRAP */
+
+.navbar {
+    background-color: #e18547 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    background-color: #1d3557;
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width:900px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* estilos carrusel */
+#carouselExample img {
+    width: 100%;
+    height: 65vh;
+}
+
+#carouselExample {
+    margin-top: 2%;
+}
+
+@media (max-width:800px) {
+    #carouselExample img {
+        height: 30vh;
+    }
+    
+}
+
+/* estilo main */
+
+main {
+    padding: 20px;
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    border: #e18547 solid 3px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.card-img-top {
+    max-width: 80%;
+    height: 60%;
+    margin: 10px auto;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #f1faee;
+}
